@@ -7,17 +7,15 @@ namespace LinkedList
         public static void Main(string[] args)
         {
             //Console.WriteLine("Welcome to Linked List Problem");
-            DeleteLast list = new DeleteLast();
-            Console.WriteLine("Current Size of the list is: " + list.getListSize());
-
+            SearchLS list = new SearchLS();
             list.insertNode(56);
             list.insertNode(30);
             list.insertNode(70);
             list.printNodes();
 
-            Console.WriteLine("-------------------");
-            Console.WriteLine("Deleting last node");
-            list.deleteLastNode();
+            Console.WriteLine("----------------");
+            Console.WriteLine("Finding 30 in the Lineked list");
+            list.findNode(30);
             list.printNodes();
 
         }
