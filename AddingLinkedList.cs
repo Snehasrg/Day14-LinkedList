@@ -1,4 +1,6 @@
-﻿namespace LinkedList
+﻿using System.Xml.Linq;
+
+namespace LinkedList
 {
     public class AddingLinkedList
     {
@@ -10,7 +12,6 @@
             this.size = 0;
             this.head = null;
         }
-
         public void insertNode(int data)
         {
             Nodes node = new Nodes();
@@ -55,10 +56,9 @@
         }
 
 
-        public int ListSize()
+        public int getListSize()
         {
             return size;
         }
-
     }
 }
